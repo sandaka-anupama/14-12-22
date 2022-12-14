@@ -1,0 +1,22 @@
+#PRINTING NUMBERS IN DESCENDING ORDER
+n=int(input())
+a=list(map(int,input().split()))
+for i in range(0,n-1):
+    for j in range(i+1,n):
+       if a[i]<a[j]:
+           t=a[i]
+           a[i]=a[j]
+           a[j]=t
+for i in range(n):
+    print(a[i],end=' ')
+
+output:
+==================================================== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/maximum.py ====================================================
+5
+45 78 9 1 2
+78 45 9 2 1 
+
+==================================================== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/maximum.py ====================================================
+6
+32 12 45 78 4 2
+78 45 32 12 4 2 
