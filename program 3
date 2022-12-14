@@ -1,0 +1,17 @@
+n=int(input())
+a=list(map(int,input().split()))
+for i in range(0,n-1):
+    for j in range(1,n-2):
+        if a[i]==a[j]:
+            break
+    print('yes')
+else:
+    print('no')
+       
+= RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/maximum.py
+3
+1 2 1
+yes
+4
+1 2 3 4
+no
