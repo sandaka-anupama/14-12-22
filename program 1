@@ -1,0 +1,25 @@
+#PRINTING maximum and minimum values in tha list
+n=int(input())
+a=list(map(int,input().split()))
+max=[0]
+min=[0]
+for i in range(1,n):
+    if a[i]>max[0]:
+        max[0]=a[i]
+    if a[i]<min[0]:
+        min[0]=a[i]
+print(max[0])
+print(min[0])
+
+output:
+==================================================== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/maximum.py ====================================================
+6
+12 56 98 34 11 0
+98
+0
+
+==================================================== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/maximum.py ====================================================
+5
+1 2 3 44 0
+44
+0
